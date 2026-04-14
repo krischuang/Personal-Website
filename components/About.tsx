@@ -31,7 +31,7 @@ export default function About() {
               >
                 <div className="w-full h-full rounded-2xl overflow-hidden">
                   <Image
-                    src="/avatar.png"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/avatar.png`}
                     alt="Kai-Hsiang Chuang"
                     width={224}
                     height={224}
