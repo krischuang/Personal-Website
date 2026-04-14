@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   const stats = [
     { value: "7+",     label: "Years Experience" },
@@ -28,11 +30,13 @@ export default function About() {
                 }}
               >
                 <div className="w-full h-full rounded-2xl overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src="/avatar.png"
                     alt="Kai-Hsiang Chuang"
+                    width={224}
+                    height={224}
                     className="w-full h-full object-cover object-top"
+                    priority
                   />
                 </div>
               </div>
