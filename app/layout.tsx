@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kai-Hsiang Chuang - Software Engineer",
-  description: "Master of IT student at UTS with 5+ years of software engineering experience in frontend, backend, and DevOps",
+  title: "Kai-Hsiang Chuang — Senior Software Engineer",
+  description: "Senior Software Engineer specialising in backend Java, API platforms, and scalable revenue systems. 7+ years experience. Master of IT at UTS (WAM 89.88).",
 };
 
 export default function RootLayout({
