@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.NODE_ENV === "production" ? "/Personal-Website" : "";
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/Personal-Website",
+  basePath,
   images: {
     unoptimized: true,
   },
