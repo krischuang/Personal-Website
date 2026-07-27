@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   const stats = [
     { value: "7+",     label: "Years Experience" },
-    { value: "89.88",  label: "UTS WAM (HD)" },
+    { value: "90.50",  label: "UTS WAM (HD)" },
     { value: "10+",    label: "Systems Built" },
     { value: "ANZ",    label: "Based in Sydney" },
   ];
@@ -43,7 +43,7 @@ export default function About() {
               {/* Floating badge */}
               <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-2 border border-indigo-500/20 shadow-xl">
                 <p className="text-xs text-slate-400">Currently @</p>
-                <p className="text-sm font-semibold text-white">Solum Medical</p>
+                <p className="text-sm font-semibold text-white">Airlie / AI Registrar</p>
               </div>
             </div>
 
@@ -64,30 +64,33 @@ export default function About() {
           {/* Right - bio */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-              Building platforms that{" "}
-              <span className="gradient-text">power revenue</span> and
-              empower teams
+              Turning ambiguous problems into{" "}
+              <span className="gradient-text">working AI systems</span>
             </h2>
 
             <div className="space-y-4 text-slate-400 leading-relaxed">
               <p>
-                I&apos;m a backend-focused software engineer with 7+ years of experience designing and
-                delivering enterprise-grade APIs, platforms, and self-serve tooling. My work spans
-                high-throughput ERP finance systems, Java/Oracle treasury platforms, cloud-based SaaS
-                products, and revenue analytics pipelines.
+                I&apos;m an AI-native software engineer with 7+ years building backend systems and applied
+                AI workflows, with a track record of turning ambiguous problems into working systems
+                across healthcare, automation, and data-driven products. I recently moved into a Senior
+                AI Software Consultant role at Airlie/AI Registrar, where I lead code reviews, architecture
+                and technical-risk discussions, and cross-functional delivery for a healthcare AI platform —
+                after building its backend as an AI Software Engineer, combining OCR and LLM-based
+                extraction (OpenAI, Claude) with validation and human review to automate structured data
+                capture in a regulated environment.
+              </p>
+              <p>
+                My background spans data analytics and A/B testing at AlfredCamera, large-scale workflow
+                automation and AI-assistant adoption at Vanguard International Semiconductor, and{" "}
+                <span className="text-slate-200 font-medium">WorkerAI</span>, a personal project building
+                a modular AI orchestration platform with monitoring and reporting.
               </p>
               <p>
                 I&apos;m currently completing a{" "}
                 <span className="text-slate-200 font-medium">Master of Information Technology</span> at
-                the University of Technology Sydney (WAM 89.88, High Distinction), backed by an Academic
-                Merit International Scholarship. I hold dual Master&apos;s degrees, the first in Industrial
-                Engineering from National Tsing Hua University (GPA 3.80).
-              </p>
-              <p>
-                I&apos;m at my best when partnering with product and business stakeholders to translate
-                ambiguous requirements into scalable, well-documented systems: the kind that other teams
-                can use and build on independently. I also actively mentor engineers, champion code
-                quality, and leverage AI coding tools to amplify team output.
+                the University of Technology Sydney (WAM 90.50, High Distinction; UTS 2026 Dean&apos;s
+                List), backed by an Academic Merit International Scholarship. I&apos;m comfortable working
+                end-to-end across technical and non-technical stakeholders.
               </p>
             </div>
 

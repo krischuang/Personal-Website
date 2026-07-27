@@ -82,8 +82,8 @@ export default function Contact() {
               <span className="gradient-text">great together</span>
             </h2>
             <p className="text-slate-400 leading-relaxed mb-8">
-              I&apos;m actively exploring Senior Software Engineer opportunities across ANZ, with a focus
-              on backend platforms, API development, and revenue-enabling systems. Open to hybrid or
+              I&apos;m actively exploring Senior AI/Software Engineer opportunities across ANZ, with a
+              focus on applied AI workflows, backend platforms, and healthcare systems. Open to hybrid or
               remote roles. If you have an opportunity or just want to connect, reach out.
             </p>
 

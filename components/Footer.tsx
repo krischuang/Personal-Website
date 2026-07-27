@@ -27,7 +27,7 @@ export default function Footer() {
               <span className="text-slate-200 font-semibold">Kai-Hsiang Chuang</span>
             </div>
             <p className="text-xs text-slate-600 max-w-xs leading-relaxed">
-              Senior Software Engineer · Backend Java &amp; API Platforms · Revenue Systems ·
+              AI-Native Software Engineer · Applied AI &amp; Automation · Healthcare Systems ·
               Greater Sydney Area
             </p>
           </div>

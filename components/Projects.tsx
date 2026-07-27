@@ -1,60 +1,45 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Promotional Offer Platform",
-      subtitle: "Self-Serve Revenue Enablement",
+      title: "AI Document Intelligence Pipeline",
+      subtitle: "Airlie / AI Registrar",
       description:
-        "Backend promotional platform in Java/Python enabling internal teams to configure, launch, and manage targeted offers without engineering involvement. Integrated with content management, personalisation, and experimentation services.",
+        "Document processing pipeline combining OCR and LLM-based structured field extraction (OpenAI, Claude), with a Redis-backed queue for asynchronous human review, replacing manual handling of clinical documents arriving from email and upload channels.",
       highlights: [
-        "RESTful API layer with full documentation & self-serve config interface",
-        "Scalable DB schemas for discounts, trials, bundles with real-time eligibility",
-        "SOLID-principled design, enabling new offer types to be added without structural rework",
+        "Split into ingestion, LLM extraction, human review, and output storage stages, each with its own validation step, so bad data gets caught early and stays traceable",
+        "Iterated on prompt design and structured output schemas to improve extraction accuracy",
+        "Integration and end-to-end tests catch regressions as extraction logic changes",
       ],
-      technologies: ["Java", "Python", "PostgreSQL", "RESTful APIs", "SOLID"],
-      gradient: "from-indigo-600 via-violet-600 to-purple-700",
-      icon: "🚀",
+      technologies: ["OpenAI API", "Claude API", "OCR", "Redis", "PostgreSQL"],
+      gradient: "from-emerald-600 via-teal-600 to-cyan-700",
+      icon: "🩺",
     },
     {
-      title: "Invoice Automation Service",
-      subtitle: "Distributed Java/Oracle Backend",
+      title: "Invoice OCR & ERP Automation System",
+      subtitle: "Vanguard International Semiconductor (VIS)",
       description:
-        "Distributed Java/Python backend service with concurrent data processing for OCR-based invoice extraction and Oracle ERP integration, reducing manual financial processing from days to minutes.",
+        "Python (OpenCV) OCR pipeline integrated with Oracle ERP via REST APIs, automatically extracting invoice data and QR codes from scanned documents and submitting validated records, reducing manual accounting effort by 3 man-days/month.",
       highlights: [
-        "Event-driven patterns with structured error handling at service boundaries",
-        "OCR + QR recognition logic with fraud detection validation",
-        "Delivered with automated testing and CI/CD from day one",
+        "Split into image preprocessing, QR decode, field extraction, and ERP submission stages, each validated independently to handle scan quality issues",
+        "Schema validation and business-rule checks catch malformed or non-compliant records before they reach the ERP system",
       ],
-      technologies: ["Java", "Python", "Oracle ERP", "OCR", "CI/CD", "Event-driven"],
-      gradient: "from-cyan-600 via-blue-600 to-indigo-700",
-      icon: "⚙️",
-    },
-    {
-      title: "ERP Finance System Automation",
-      subtitle: "AP Workflow & Oracle Treasury Integration",
-      description:
-        "C# application automating the Accounts Payable Excel reporting workflow at VIS, plus distributed integration service connecting Oracle Treasury with internal financial platforms to support a 10% business expansion.",
-      highlights: [
-        "Automated AP data parsing, business logic, and formatted report generation",
-        "Zero-downtime Oracle Treasury integration with concurrent data transformation",
-        "Improved ERP workflow efficiency by 30% through systematic service decomposition",
-      ],
-      technologies: ["C#", "Python", "SQL", "Oracle DB", "Oracle Treasury", "REST APIs"],
-      gradient: "from-violet-600 via-indigo-600 to-blue-700",
+      technologies: ["Python", "OpenCV", "Oracle ERP", "REST APIs"],
+      gradient: "from-blue-600 via-indigo-600 to-violet-700",
       icon: "📊",
     },
     {
-      title: "Ad Performance Analytics Pipeline",
-      subtitle: "Revenue & Retention Data Platform",
+      title: "WorkerAI",
+      subtitle: "Modular AI Task Orchestration Platform · Active Personal Project",
       description:
-        "PostgreSQL-backed data pipeline and growth dashboard system at AlfredCamera tracking paid user acquisition, retention, upsell, and cross-sell KPIs. Python A/B testing and pricing analysis services enabling data-driven revenue decisions.",
+        "Modular AI task orchestration platform where independent workers handle discrete pieces of logic and are chained into multi-stage pipelines by a central scheduler that tracks task state and coordinates workflow execution.",
       highlights: [
-        "SQL pipelines powering executive-facing revenue and retention dashboards",
-        "Python A/B testing automation contributing to 10% monthly revenue improvement",
-        "API integrations with external partners for seamless data ingestion",
+        "Orchestration runtime in Python/FastAPI with PostgreSQL-backed task state, async execution, and retry/failure recovery, covered by unit and integration tests",
+        "React/Next.js dashboard and REST API for monitoring workers and generating daily reports",
+        "Worker-based design allows new workflow types, including human-in-the-loop review steps, without changing the core scheduler; first applied end-to-end to a quantitative trading strategy evaluator",
       ],
-      technologies: ["PostgreSQL", "Python", "Pandas", "A/B Testing", "REST APIs", "Analytics"],
-      gradient: "from-emerald-600 via-cyan-600 to-blue-700",
-      icon: "📈",
+      technologies: ["Python", "FastAPI", "PostgreSQL", "React/Next.js"],
+      gradient: "from-indigo-600 via-violet-600 to-purple-700",
+      icon: "🤖",
     },
   ];
 
@@ -67,7 +52,7 @@ export default function Projects() {
           <span className="text-indigo-400 text-sm font-semibold tracking-widest uppercase">Projects</span>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <div
               key={i}

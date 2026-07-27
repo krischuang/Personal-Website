@@ -1,31 +1,57 @@
 export default function Skills() {
   const categories = [
     {
-      label: "Languages",
-      accent: "text-indigo-400",
-      border: "border-indigo-500/20",
-      dot: "bg-indigo-400",
-      skills: ["Java", "Python", "JavaScript", "SQL", "C#", "Shell Scripting"],
+      label: "AI / LLM & Healthcare Automation",
+      accent: "text-amber-400",
+      border: "border-amber-500/20",
+      dot: "bg-amber-400",
+      skills: [
+        "OpenAI API", "Claude API", "OCR / Document Intelligence",
+        "LLM-Based Structured Extraction", "Structured Output Validation",
+        "Healthcare System Integrations", "Workflow Automation",
+        "AI Agent/Orchestration Design", "RAG Pipelines & Agent Workflows",
+      ],
     },
     {
-      label: "Backend & Architecture",
+      label: "Workflow & Orchestration",
       accent: "text-violet-400",
       border: "border-violet-500/20",
       dot: "bg-violet-400",
       skills: [
-        "RESTful API Design", "Microservices", "Distributed Systems",
-        "Concurrency & Multithreading", "SOLID Principles", "Service Decomposition",
-        "Self-Serve Platform Design", "Revenue Platform Patterns",
+        "Event-Driven Processing", "BullMQ", "Redis", "Async Processing",
+        "Retry/Failure Recovery", "Multi-Stage Pipeline Design", "Task-State Tracking",
       ],
     },
     {
-      label: "Databases",
+      label: "Data & Analytics",
       accent: "text-cyan-400",
       border: "border-cyan-500/20",
       dot: "bg-cyan-400",
       skills: [
-        "PostgreSQL", "MySQL", "Oracle DB",
-        "SQL Modelling & Tuning", "Data Structure Design for Scale", "Oracle ERP",
+        "PostgreSQL", "MySQL", "Oracle DB", "Prisma ORM",
+        "SQL Modelling & Query Optimisation", "Analytics Dashboards",
+        "A/B Testing", "Retention & Pricing Analysis",
+      ],
+    },
+    {
+      label: "Backend & APIs",
+      accent: "text-indigo-400",
+      border: "border-indigo-500/20",
+      dot: "bg-indigo-400",
+      skills: [
+        "Node.js/TypeScript", "Python", "REST API Design",
+        "FastAPI", "Webhooks", "Auth (JWT, OAuth 2.0)",
+      ],
+    },
+    {
+      label: "Frontend",
+      accent: "text-blue-400",
+      border: "border-blue-500/20",
+      dot: "bg-blue-400",
+      skills: [
+        "React", "Next.js", "TypeScript", "JavaScript (ES6+)",
+        "Component-Based Architecture", "Real-Time Data Rendering",
+        "Responsive Design", "Performance Optimisation",
       ],
     },
     {
@@ -33,36 +59,26 @@ export default function Skills() {
       accent: "text-emerald-400",
       border: "border-emerald-500/20",
       dot: "bg-emerald-400",
-      skills: ["AWS EC2", "Docker", "GitHub Actions CI/CD", "Nginx", "Linux", "Git"],
-    },
-    {
-      label: "AI & Tooling",
-      accent: "text-amber-400",
-      border: "border-amber-500/20",
-      dot: "bg-amber-400",
       skills: [
-        "GitHub Copilot", "ChatGPT / LLM Integration",
-        "AI-Assisted Development", "Deep Learning", "OpenCV",
+        "AWS (EC2, ECS, Lambda, SSM, IAM)", "Docker",
+        "GitHub Actions CI/CD", "Nginx", "Linux", "Deployment Automation",
       ],
     },
     {
-      label: "Collaboration",
+      label: "Testing & Quality",
       accent: "text-rose-400",
       border: "border-rose-500/20",
       dot: "bg-rose-400",
       skills: [
-        "Technical Mentoring", "Stakeholder Communication",
-        "Code Review Leadership", "Pair Programming",
-        "Cross-functional Agile Delivery", "Architectural Trade-off Analysis",
+        "Vitest", "E2E Testing", "Integration Testing",
+        "Validation", "Regression Testing", "Code Reviews",
       ],
     },
   ];
 
   const certifications = [
-    { name: "SAS Viya Data Challenge", detail: "Ranked 10th Nationally · SAS · 2025" },
-    { name: "Commonwealth Bank SE Virtual Experience", detail: "Forage" },
-    { name: "Big Data Analyst Certification", detail: "iPAS" },
-    { name: "Google Analytics Individual Qualification", detail: "Google" },
+    { name: "UTS Dean's List", detail: "University of Technology Sydney · 2026" },
+    { name: "SAS Viya Data Challenge", detail: "Ranked 10th Nationally · SAS · Aug 2025" },
     { name: "Journal Paper Published", detail: "International Journal of Production Research · 2021" },
     { name: "Best Industrial Application Paper", detail: "18th APIEMS Conference · 2018" },
     { name: "Outstanding Presentation Award", detail: "ISMI International Conference · 2018" },
@@ -106,7 +122,7 @@ export default function Skills() {
 
         {/* Certifications & Awards */}
         <h3 className="text-slate-300 font-semibold mb-6 text-sm tracking-wide uppercase">
-          Certifications &amp; Awards
+          Awards &amp; Certifications
         </h3>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {certifications.map((cert, i) => (
