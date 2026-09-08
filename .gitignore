@@ -18,6 +18,10 @@
 
 # production
 /build
+/out
+
+# claude code local settings
+.claude/settings.local.json
 
 # misc
 .DS_Store
