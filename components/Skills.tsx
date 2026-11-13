@@ -6,10 +6,10 @@ export default function Skills() {
       border: "border-amber-500/20",
       dot: "bg-amber-400",
       skills: [
-        "OpenAI API", "Claude API", "OCR / Document Intelligence",
-        "LLM-Based Structured Extraction", "Structured Output Validation",
-        "Healthcare System Integrations", "Workflow Automation",
-        "AI Agent/Orchestration Design", "RAG Pipelines & Agent Workflows",
+        "OpenAI API", "Claude API", "Amazon Bedrock (Evaluation Prep)",
+        "OCR / Document Intelligence", "LLM-Based Structured Extraction",
+        "Structured Output & Tool Calling", "Human-in-the-Loop Review Design",
+        "LLM Fine-Tuning (TensorFlow)", "Healthcare System Integrations",
       ],
     },
     {
@@ -60,8 +60,8 @@ export default function Skills() {
       border: "border-emerald-500/20",
       dot: "bg-emerald-400",
       skills: [
-        "AWS (EC2, ECS, Lambda, SSM, IAM)", "Docker",
-        "GitHub Actions CI/CD", "Nginx", "Linux", "Deployment Automation",
+        "AWS (EC2, ECS, Lambda, IAM, CloudTrail)", "AWS CDK (Infrastructure as Code)",
+        "Kubernetes", "Docker", "GitHub Actions CI/CD", "Nginx", "Linux",
       ],
     },
     {
@@ -70,7 +70,7 @@ export default function Skills() {
       border: "border-rose-500/20",
       dot: "bg-rose-400",
       skills: [
-        "Vitest", "E2E Testing", "Integration Testing",
+        "Vitest", "Jest", "Playwright", "Integration Testing",
         "Validation", "Regression Testing", "Code Reviews",
       ],
     },
