@@ -28,18 +28,19 @@ export default function Projects() {
       icon: "📊",
     },
     {
-      title: "WorkerAI",
-      subtitle: "Modular AI Task Orchestration Platform · Active Personal Project",
+      title: "ApplyFlow",
+      subtitle: "AI-Powered Job Application Platform · Open Source Project",
       description:
-        "Modular AI task orchestration platform where independent workers handle discrete pieces of logic and are chained into multi-stage pipelines by a central scheduler that tracks task state and coordinates workflow execution.",
+        "AI-powered job application platform that parses resumes with Claude, scores roles against a profile, and drives Playwright through real Seek.com.au Quick Apply submissions, not just tracking applications.",
       highlights: [
-        "Orchestration runtime in Python/FastAPI with PostgreSQL-backed task state, async execution, and retry/failure recovery, covered by unit and integration tests",
-        "React/Next.js dashboard and REST API for monitoring workers and generating daily reports",
-        "Worker-based design allows new workflow types, including human-in-the-loop review steps, without changing the core scheduler; first applied end-to-end to a quantitative trading strategy evaluator",
+        "FastAPI backend and Next.js frontend, with Claude used for resume parsing and job scoring",
+        "Playwright automation fills and submits real Quick Apply forms on Seek.com.au",
+        "Backend covered by an automated test suite with an active CI pipeline (lint, build, test)",
       ],
-      technologies: ["Python", "FastAPI", "PostgreSQL", "React/Next.js"],
-      gradient: "from-indigo-600 via-violet-600 to-purple-700",
-      icon: "🤖",
+      technologies: ["Python", "FastAPI", "Next.js", "Claude API", "Playwright"],
+      gradient: "from-amber-600 via-orange-600 to-rose-700",
+      icon: "🧭",
+      link: "https://github.com/krischuang/ApplyFlow",
     },
   ];
 
@@ -96,6 +97,17 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
+
+                {"link" in project && project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs text-indigo-400 hover:text-indigo-300 mt-4"
+                  >
+                    View repository ↗
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -104,7 +116,7 @@ export default function Projects() {
         {/* GitHub link */}
         <div className="text-center mt-12">
           <a
-            href="https://github.com/kai-hsiang-chuang"
+            href="https://github.com/krischuang"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl
