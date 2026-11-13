@@ -1,7 +1,7 @@
 export default function Experience() {
   const experiences = [
     {
-      title: "Senior AI Software Consultant",
+      title: "Senior AI Software Consultant | Project Technical Lead",
       company: "Airlie / AI Registrar",
       location: "Sydney, Australia",
       period: "Jul 2026 – Present",
@@ -9,12 +9,12 @@ export default function Experience() {
       accent: "text-emerald-400",
       border: "border-emerald-500/20",
       bullets: [
-        "Lead code reviews for production features across multiple AI healthcare projects, ensuring code quality, security, maintainability, and compliance with engineering standards.",
-        "Partner with external partners and third-party vendors to gather requirements, evaluate technical feasibility, and translate business needs into scoped engineering work.",
-        "Break large initiatives into work packages and coordinate implementation priorities and delivery planning across engineering, product, and management stakeholders.",
-        "Advise leadership on software architecture and technical risk, recommending scalable, maintainable solutions, while continuing to build production software across backend services, AI workflows, and system integrations.",
+        "Appointed Project Technical Lead for Ask Airlie and Airlie Patient Assistant, leading technical readiness review, architecture and risk assessment, and evaluation planning for the platform's LLM-powered applications, including review of existing implementation, test evidence, and release readiness.",
+        "Coordinating AWS Bedrock evaluation preparation, including IAM configuration, SSO, inference profiles, CloudTrail logging, least-privilege access, and cost controls, and working directly with technical stakeholders to agree priorities and resolve blockers.",
+        "Own backend services for the platform, including an LLM-based document extraction pipeline built on the OpenAI and Claude APIs, with structured output schemas and tool calling turning OCR input into validated records, and every extraction routed through a human review step before it is saved.",
+        "Built and operate asynchronous processing pipelines (Node.js/TypeScript, PostgreSQL, Redis, BullMQ) protected by OAuth/OIDC authentication, role-based access control, and PostgreSQL row-level security, and delivered integration with Halaxy, an external practice management system.",
       ],
-      technologies: ["OpenAI API", "Claude API", "System Architecture", "Code Review", "Stakeholder Delivery"],
+      technologies: ["AWS Bedrock", "OpenAI API", "Claude API", "Technical Leadership", "Stakeholder Coordination"],
     },
     {
       title: "AI Software Engineer",
@@ -75,7 +75,7 @@ export default function Experience() {
         "Mentored junior engineers through code reviews and pair programming; received the 2023 Annual Excellent Employee and 2022 Outstanding Performance Awards.",
       ],
       technologies: ["Python", "SQL", "Oracle DB", "PostgreSQL", "RESTful APIs"],
-      awards: ["2023 Annual Excellent Employee – VIS", "2022 Outstanding Performance Award – VIS"],
+      awards: ["2023 Annual Excellent Employee · VIS", "2022 Outstanding Performance Award · VIS"],
     },
     {
       title: "Business Data Analyst",
