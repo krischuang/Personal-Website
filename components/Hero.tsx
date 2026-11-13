@@ -58,11 +58,11 @@ export default function Hero() {
           className="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-300 mb-6 animate-fade-up"
           style={{ animationDelay: "0.2s", opacity: 0 }}
         >
-          AI-Native Software Engineer
+          Senior Software Engineer
           <span className="text-indigo-400 mx-3">·</span>
-          Applied AI &amp; Automation
+          Project Technical Lead
           <span className="text-indigo-400 mx-3">·</span>
-          Healthcare Systems
+          Backend &amp; Applied AI
         </h2>
 
         {/* Summary */}
@@ -70,9 +70,9 @@ export default function Hero() {
           className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-up"
           style={{ animationDelay: "0.3s", opacity: 0 }}
         >
-          7+ years building backend systems and applied AI workflows, turning ambiguous problems
-          into working systems across healthcare, automation, and data-driven products.
-          Master of IT @ UTS · WAM&nbsp;90.50 (HD) · UTS 2026 Dean&apos;s List.
+          7+ years building backend systems and applied AI workflows, now leading technical
+          readiness and architecture review as Project Technical Lead for two AI-powered
+          healthcare products. Master of IT @ UTS · WAM&nbsp;90.50 (HD) · UTS 2026 Dean&apos;s List.
         </p>
 
         {/* CTAs */}
