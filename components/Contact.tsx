@@ -47,8 +47,8 @@ export default function Contact() {
         </svg>
       ),
       label: "GitHub",
-      value: "github.com/kai-hsiang-chuang",
-      href: "https://github.com/kai-hsiang-chuang",
+      value: "github.com/krischuang",
+      href: "https://github.com/krischuang",
     },
     {
       icon: (
