@@ -70,20 +70,20 @@ export default function About() {
 
             <div className="space-y-4 text-slate-400 leading-relaxed">
               <p>
-                I&apos;m an AI-native software engineer with 7+ years building backend systems and applied
+                I&apos;m a senior software engineer with 7+ years building backend systems and applied
                 AI workflows, with a track record of turning ambiguous problems into working systems
-                across healthcare, automation, and data-driven products. I recently moved into a Senior
-                AI Software Consultant role at Airlie/AI Registrar, where I lead code reviews, architecture
-                and technical-risk discussions, and cross-functional delivery for a healthcare AI platform —
-                after building its backend as an AI Software Engineer, combining OCR and LLM-based
-                extraction (OpenAI, Claude) with validation and human review to automate structured data
-                capture in a regulated environment.
+                across healthcare, automation, and data-driven products. At Airlie (by AI Registrar) I
+                hold a Senior AI Software Consultant role and have been appointed Project Technical Lead
+                for Ask Airlie and Airlie Patient Assistant, leading technical readiness review,
+                architecture and risk assessment, and AWS Bedrock evaluation preparation, alongside
+                hands-on delivery of the platform&apos;s backend, including an LLM-based document
+                extraction pipeline (OpenAI, Claude) with human-in-the-loop review.
               </p>
               <p>
                 My background spans data analytics and A/B testing at AlfredCamera, large-scale workflow
                 automation and AI-assistant adoption at Vanguard International Semiconductor, and{" "}
-                <span className="text-slate-200 font-medium">WorkerAI</span>, a personal project building
-                a modular AI orchestration platform with monitoring and reporting.
+                <span className="text-slate-200 font-medium">ApplyFlow</span>, a personal project that
+                scores and auto-submits job applications using Claude and Playwright.
               </p>
               <p>
                 I&apos;m currently completing a{" "}
@@ -110,7 +110,7 @@ export default function About() {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/kai-hsiang-chuang"
+                href="https://github.com/krischuang"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl
